@@ -1,12 +1,12 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React from 'react'
+
 
 function Shop() {
   return (
-    <div className="App">
+    <div>
       <h1>Shop</h1>
-    </div>
-  );
+      </div>
+  )
 }
 
-export default Shop;
+export default Shop

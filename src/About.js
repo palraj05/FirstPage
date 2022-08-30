@@ -1,12 +1,12 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React from 'react'
+
 
 function About() {
   return (
-    <div className="App">
+    <div>
       <h1>About</h1>
-    </div>
-  );
+      </div>
+  )
 }
 
-export default About;
+export default About

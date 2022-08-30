@@ -1,24 +1,27 @@
-import logo from "./logo.svg";
-import "./App.css";
-import Shop from "./Shop";
-import Nav from "./Nav";
-import About from "./About";
-import Home from "./Home";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import React from 'react';
+import About from './About';
+import Nav from './Nav';
+import Shop from './Shop';
+import Home from './Home';
+import {BrowserRouter , Route, Routes} from "react-router-dom";
+
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Nav />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/shop" component={Shop} />
-        </Switch>
-      </div>
-    </Router>
-  );
+
+    <BrowserRouter>
+    <div className='App'>
+      <Nav />
+      <Routes>
+      <Route path='/' exact element={ <Home/> } />
+      <Route path='/About' element={ <About/> } />
+      <Route path='/Shop' element={ <Shop/> } />
+     
+
+      </Routes>
+    </div>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App
